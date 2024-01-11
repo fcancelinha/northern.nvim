@@ -13,6 +13,11 @@ local b = require("northern.base")
 local l = require("northern.lang")
 local p = require("northern.plugs")
 local u = require("northern.utils")
+local bufferline = require("northern.misc.bufferline")
+
+function northern.bufferline()
+	return bufferline
+end
 
 function northern.load(opts)
 	u.load(b, l, p)
